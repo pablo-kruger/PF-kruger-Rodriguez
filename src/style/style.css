@@ -5,12 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* BARRA DE NAVEGACION */
 nav {
    width: 100%;
-   padding-right: 30px;
    height: 60px;
-   border: 2px solid rgb(196, 196, 196);
+
+   font-family: Barlow Condensed, sans-serif;
+   z-index: 10;
   }
   nav img {
 height: 30px;
@@ -220,10 +222,24 @@ input[type="submit"]:hover {
 }
 /*SOBRE NOSOTROS*/
 .fondo {
-  position: absolute;
-  filter: opacity(40%);
-  
+background-size: 500%;
+  background-image: linear-gradient(135deg, 
+  #5b5a5a, #8a8888, #a8a4a4, #fff, #fff, #747474, #666565
+  );
+  animation: animacionfondo 10s infinite; 
 }
+@keyframes animacionfondo {
+0% { 
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
 .sobrenosotros {
   padding: 30px;
 }
@@ -265,50 +281,59 @@ justify-content: space-between;
 margin-left: 30px;
 margin-right: 30px;
   }
-    /* FOOTER */
-    footer {
-      background-color: rgb(196, 196, 196);
-      width: 100%;
-      height: 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+ /* FOOTER */
+footer {
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+  height: 50px;
+   display: flex;
+justify-content: space-between;
+ align-items: center;
     }
     
-    .logofooter {
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
-    }
+.logofooter {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
     
-    .logofooter img {
+.logofooter img {
       height: 40px;
       margin: 5px;
     }
     
-    footer h3 {
-      font-size: 15px;
-      color: #fff;
-      text-align: center;
-      flex-grow: 2;
-    }
+footer h3 {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    flex-grow: 2;
+}
     
-    footer ul.social-links {
+footer ul.social-links {
       list-style-type: none;
       display: flex;
       align-items: center;
-    }
-    
-    footer ul.social-links li {
-      margin-left: 10px;
-    }
-    
-    footer ul.social-links li:first-child {
-      margin-left: 0;
+      margin: 10px;
     }
     
 
+    
+footer ul.social-links li:first-child {
+      margin-left: 0;
+    }   
 footer li a {
-  color: white;
+  color: #000;
   padding: 4px; 
+}
+
+ /* MEDIAS QUERIES*/
+
+@media screen and (max-width: 576px) {
+  footer h3 {
+   font-size: 10px;
+      }
+}
+.galeriainicio {
+  width: 100%;
+  height: 60vh;
 }
