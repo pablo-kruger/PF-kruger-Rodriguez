@@ -40,13 +40,13 @@ nav {
             flex-grow: 1;
             object-fit: cover;
             transition-duration: 950ms;
-            filter: opacity(80%);
+            filter: opacity(80%);&:hover {
+                cursor: pointer;
+                width: 80%;
+                opacity: 1;
+                filter: contrast(110%);
         }
-        img:hover {
-            cursor: pointer;
-            width: 80%;
-            opacity: 1;
-            filter: contrast(110%);
+       
   }
 }
 
