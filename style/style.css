@@ -144,15 +144,10 @@ button {
   transition: 0.5s;
 }
 button:hover {
-  background-color: goldenrod;
+  background-color: rgb(134, 134, 134);
 }
-.titulosbotones {
-  display: inline-block;
-}
-.titulosbotones h4 {
-  text-align: center;
- 
-}
+
+
 /* CONTACTO FORMULARIO */
 .cajadecontacto {
   width: 50%;
@@ -316,7 +311,9 @@ footer ul.social-links {
       margin: 10px;
     }
     
-
+footer ul.social-links li {
+      margin-left: 10px;
+    }
     
 footer ul.social-links li:first-child {
       margin-left: 0;
@@ -328,12 +325,53 @@ footer li a {
 
  /* MEDIAS QUERIES*/
 
+
 @media screen and (max-width: 576px) {
   footer h3 {
    font-size: 10px;
       }
-}
+
+ /* INDEX */
 .galeriainicio {
   width: 100%;
   height: 60vh;
 }
+ /* EQUIPOS DE RIEGO */
+.tiposderiego {
+  width: 100%;
+  height: 80vh;
+}
+.titulosriego {
+  font-size: 50%;
+}
+/* CONTACTO  */
+.contenedorbotones {
+  display: flex;
+  width: 100vw;
+  height:auto;
+  margin: 10px;
+}
+.logoscontacto img {
+  width: 40px;
+  height: 40px; 
+  margin: 10px; 
+}
+button {
+  transition: 0.5s;
+}
+button:hover {
+  background-color: rgb(134, 134, 134);
+}
+
+
+/* CONTACTO FORMULARIO */
+.cajadecontacto {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px; 
+  margin-bottom: 20px;
+}
+}
+
