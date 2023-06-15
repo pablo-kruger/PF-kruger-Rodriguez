@@ -12,6 +12,7 @@ nav {
   height: 60px;
   font-family: Barlow Condensed, sans-serif;
   z-index: 10;
+  background-color: #8B4513;
 }
 nav img {
   height: 30px;
@@ -19,7 +20,7 @@ nav img {
   margin-left: 20px;
 }
 nav li a:hover {
-  background-color: #848484;
+  background-color: #f7d735;
 }
 
 /* SLIDER INICIO */
@@ -326,7 +327,7 @@ footer h3 {
   /*Nav bar resposive*/
   #colorresponsive {
     padding: 5px;
-    background-color: #fff;
+    background-color: #F79535;
   }
   /*footer responsive*/
   footer h3 {
@@ -366,6 +367,29 @@ footer h3 {
     border: 2px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+  }
+  /* Asesoria responsive */
+  .asesoria {
+    width: 100%;
+  }
+  .asesoria div {
+    margin-bottom: 10px;
+  }
+  .asesoria div img {
+    margin-top: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }
+  .asesoria div h4 {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Barlow Condensed;
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
