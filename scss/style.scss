@@ -237,7 +237,7 @@ input[type="submit"] {
 .tiposderiego { 
     display:inline-flex;
     width: 100vw;
-    height: 400px;
+    height: 500px;
     img {
         width: 0px;
         flex-grow: 1;
@@ -251,14 +251,19 @@ input[type="submit"] {
             opacity: 1;
             filter: contrast(110%);
         }
+       
 }
-  .titulosriego {
-display: flex;
-justify-content: space-around;
-margin: 30px;
-font-family: Barlow Condensed, sans-serif;
+   .titulosriego {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    h2 {
+     display: flex;
+      font-family: Barlow Condensed, sans-serif;     
   }
- /* FOOTER */
+  }
+ /*FOOTER */
 footer {
   background-color: #e0b16a;
   width: 100%;

@@ -246,7 +246,7 @@ input[type=submit] input[type=submit]:hover {
 .tiposderiego {
   display: inline-flex;
   width: 100vw;
-  height: 400px;
+  height: 500px;
 }
 .tiposderiego img {
   width: 0px;
@@ -263,13 +263,17 @@ input[type=submit] input[type=submit]:hover {
 }
 
 .titulosriego {
+  width: 100vw;
+  height: 40px;
   display: flex;
   justify-content: space-around;
-  margin: 30px;
+}
+.titulosriego h2 {
+  display: flex;
   font-family: Barlow Condensed, sans-serif;
 }
 
-/* FOOTER */
+/*FOOTER */
 footer {
   background-color: #e0b16a;
   width: 100%;
