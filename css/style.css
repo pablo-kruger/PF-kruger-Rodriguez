@@ -335,6 +335,9 @@ footer h3 {
     width: 100%;
     height: 60vh;
   }
+  .equiposderiego {
+    height: auto;
+  }
   /* Equipos de riego responsive */
   .tiposderiego {
     width: 100%;
